@@ -439,7 +439,7 @@ padding-bottom: 15px;
   display: none;
 }
 
-.intro-single {
+.intro-single { 
   height: 350px;
 }
 
@@ -643,7 +643,7 @@ padding: 3em 1em;
   color: #000;
 }
 .popup .close:hover {
-color: #30c39e;
+color: #120078;
 }
 
 .popup img {
@@ -703,6 +703,50 @@ color: #30c39e;
 
 .w-title {
   font-size: 1.2rem;
+}
+
+/*======================================
+//--//-->   Achievement
+====================================== */
+.blog-grid1 {
+  padding: 2em;
+  background: #fff;
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+-moz-transition: 0.5s all;
+-ms-transition: 0.5s all;
+-o-transition: 0.5s all;
+}
+
+.blog-grid1 p  {
+  color: #999;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+.blog-grid1 a {
+  color: #120078;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.blog-grid1 h4 {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: .5em;
+  letter-spacing: .5px;
+  color: #333;
+  font-weight: 600;
+}
+.blog-grid1 h5 {
+  letter-spacing: 1px;
+  font-size: 13px;
+  background: #120078;
+  color: #fff;
+  padding: 5px 10px;
+  float: right;
 }
 
 /*======================================
