@@ -135,6 +135,10 @@ a:hover {
   color: #fff;
   border-color: #cde1f8;
 }
+.button-a:hover {
+  background-color:#120078;
+  color: rgb(160, 156, 156);
+}
 
 .button-big {
   padding: .9rem 2.3rem;
