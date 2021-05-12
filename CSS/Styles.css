@@ -710,6 +710,123 @@ color: #120078;
   font-size: 1.2rem;
 }
 
+.home-course-div
+{
+    width:100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.home-course-scroll 
+{
+    height:380px; /* 40px - more place for scrollbar, is hidden under parent box */
+    white-space:nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-behavior: smooth;
+}
+
+.home-course-card
+{
+    display:inline-block;
+    width:355px;
+    height:350px;
+    background:#fff;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.25), -1px -1px 4px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    padding: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.home-course-scroll .home-course-card:first-child
+{
+    margin-left: 60px;
+}
+
+.home-course-scroll .home-course-card:last-child
+{
+    margin-right: 60px;
+}
+
+.home-course-card + .home-course-card
+{
+    margin-left:55px
+}
+@media(max-width: 767px)
+{
+    .home-course-card
+    {
+        transform: scale(0.9);
+    }
+
+    .home-course-card + .home-course-card
+    {
+        margin-left:0px
+    }
+
+    .home-course-scroll .home-course-card:first-child
+    {
+        margin-left: 20px;
+    }
+
+    .home-course-scroll .home-course-card:last-child
+    {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 576px)
+{
+    .home-course-scroll .home-course-card:first-child
+    {
+        margin-left: 0px;
+    }
+
+    .home-course-scroll .home-course-card:last-child
+    {
+        margin-right: 0px;
+    }
+}
+
+.home-course-button
+{
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+  padding: 0;
+  border: 1px solid #120078;
+  color: #120078;
+  font-size: 25px;
+  box-shadow: 0px 0px 10px #000;
+  top: 90px;
+  background: #fff;
+  z-index: 20;
+}
+@media(max-width: 576px)
+{
+  .home-course-button
+  {
+    display: none;
+  }
+}
+
+.home-course-button-left
+{
+  left: 30px;
+  display: none;
+}
+
+.home-course-button-right
+{
+  right: 30px;
+}
+/* .second-card {
+  padding-left: 20px;
+} */
+
+
 /*======================================
 //--//-->   Achievement
 ====================================== */

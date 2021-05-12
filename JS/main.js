@@ -115,3 +115,55 @@
 	});
 
 })(jQuery);
+
+function course_scroll(x)
+{
+	var scroll_course = document.getElementById('home-course-scroll');
+
+	if(window.innerWidth>576)
+	{
+		if(x==1)
+		{
+			scroll_course.scroll(scroll_course.scrollLeft-500,0);
+		}
+
+		else if(x==2)
+		{
+			scroll_course.scroll(scroll_course.scrollLeft+500,0);
+		}
+
+		if(scroll_course.scrollLeft>0)
+		{
+			$('.home-course-button-left').css('display','block');
+		}
+		else
+		{
+			$('.home-course-button-left').css('display','none');
+		}
+
+		if((scroll_course.scrollWidth - window.innerWidth)>scroll_course.scrollLeft)
+		{
+			$('.home-course-button-right').css('display','block');
+		}
+		else
+		{
+			$('.home-course-button-right').css('display','none');
+		}
+	}
+	else
+	{
+		$('.home-course-button').css('display','none');
+	}
+}
+
+
+course_scroll(0);
+
+
+
+document.getElementById('home-course-scroll').onscroll = function() {
+    if(window.innerWidth>576)
+    {
+        course_scroll(0);
+    }
+}
