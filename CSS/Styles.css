@@ -730,8 +730,8 @@ color: #120078;
 .home-course-card
 {
     display:inline-block;
-    width:355px;
-    height:350px;
+    width:345px;
+    height:345px;
     background:#fff;
     box-shadow: 2px 4px 4px rgba(0,0,0,0.25), -1px -1px 4px rgba(0,0,0,0.25);
     border-radius: 5px;
@@ -742,17 +742,17 @@ color: #120078;
 
 .home-course-scroll .home-course-card:first-child
 {
-    margin-left: 60px;
+    margin-left: 35px;
 }
 
 .home-course-scroll .home-course-card:last-child
 {
-    margin-right: 60px;
+    margin-right: 35px;
 }
 
 .home-course-card + .home-course-card
 {
-    margin-left:55px
+    margin-left:35px
 }
 @media(max-width: 767px)
 {
