@@ -116,54 +116,46 @@
 
 })(jQuery);
 
-function course_scroll(x)
-{
-	var scroll_course = document.getElementById('home-course-scroll');
+(function($) {
 
-	if(window.innerWidth>576)
-	{
-		if(x==1)
-		{
-			scroll_course.scroll(scroll_course.scrollLeft-500,0);
-		}
+	"use strict";
 
-		else if(x==2)
-		{
-			scroll_course.scroll(scroll_course.scrollLeft+500,0);
-		}
+	var fullHeight = function() {
 
-		if(scroll_course.scrollLeft>0)
-		{
-			$('.home-course-button-left').css('display','block');
-		}
-		else
-		{
-			$('.home-course-button-left').css('display','none');
-		}
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
 
-		if((scroll_course.scrollWidth - window.innerWidth)>scroll_course.scrollLeft)
-		{
-			$('.home-course-button-right').css('display','block');
-		}
-		else
-		{
-			$('.home-course-button-right').css('display','none');
-		}
-	}
-	else
-	{
-		$('.home-course-button').css('display','none');
-	}
-}
+	};
+	fullHeight();
 
+	var carousel = function() {
+		$('.featured-carousel').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:30,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:true,
+	    dots: true,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:2
+	      },
+	      1000:{
+	        items:3
+	      }
+	    }
+		});
 
-course_scroll(0);
+	};
+	carousel();
 
-
-
-document.getElementById('home-course-scroll').onscroll = function() {
-    if(window.innerWidth>576)
-    {
-        course_scroll(0);
-    }
-}
+})(jQuery);
