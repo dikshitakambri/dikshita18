@@ -95,9 +95,9 @@ a:hover {
 /*  Ico Circle --  */
 
 .ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
+  height: 80px;
+  width: 80px;
+  font-size: 1.8rem;
   border-radius: 50%;
   line-height: 1.55;
   margin: 0 auto;
@@ -203,7 +203,7 @@ a:hover {
 
 .list-ico span {
   color:#120078;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /*======================================
